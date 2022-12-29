@@ -41,7 +41,7 @@ body {
     margin: 12rem 0 6rem 0;
     text-align: center;
     background-color: #fff;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.2rem 3rem 1.2rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ body {
 
 .illustration-container {
     height: 7rem;
+    display: grid; /* permet uniquement à l'image "bg-pattern-mobile.svg" de garder sa postion */
 }
 
 .illustration {
@@ -61,6 +62,10 @@ body {
     bottom: 9rem;
     z-index: 2;
     width: 18rem;
+}
+
+.desk-desktop, .desk-shadow-desktop, .box-desktop {
+    display: none;
 }
 
 .desk-shadow {
@@ -90,11 +95,6 @@ section {
     margin-bottom: 2.1rem;
 }
 
-.question-content > p {
-    
-    
-}
-
 .question-content > p:nth-child(2) {
     display: none;
 }
@@ -102,4 +102,65 @@ section {
 [src="./images/icon-arrow-down.svg"] {
     width: 1.1rem;
     height: 0.8rem;
+}
+
+@media (min-width: 1026px) {
+
+    body {
+        background-repeat: no-repeat;
+    }
+
+
+    .container {
+        width: 78%;
+        flex-direction: row;
+        margin: 0;
+        padding: 3rem;
+        gap: 2rem;
+        
+    }
+
+    section {
+        width: 45%;
+    }
+
+    h1 {
+        text-align: start;
+    }
+
+    .desk, .desk-shadow {
+        display: none;
+    }
+
+    .illustration-container {
+        width: 50%;
+    }
+
+    
+    .desk-desktop, .box-desktop, .desk-shadow-desktop {
+        display: block;
+        position: relative;
+    }
+
+    .desk-desktop, .box-desktop
+
+    .desk-desktop {
+        bottom: 8.7rem;
+        right: 7rem;
+        z-index: 2;
+    }
+
+    .box-desktop {
+        bottom: 21.9rem;
+        right: 8.6rem;
+        z-index: 2;
+    }
+    
+    .desk-shadow-desktop {
+        bottom: 63rem;
+        right: 37rem;
+        z-index: 1;
+    }
+
+
 }
