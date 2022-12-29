@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    --ff-main: 'Red Hat Display', sans-serif;
+    --clr-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --clr-soft-red: hsl(14, 88%, 65%);
+
+    /*Background gradient:*/
+    --clr-soft-violet: hsl(273, 75%, 66%);
+    --clr-soft-blue: hsl(240, 73%, 65%);
+
+    /* Text */
+    --clr-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --clr-dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --clr-light-grayish-blue: hsl(240, 5%, 91%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-family: var(--ff-main);
+    color: var(--clr-very-dark-desaturated-blue);
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+[src="./images/illustration-woman-online-mobile.svg"] {
+    
+}
+
+h1 {
+    margin: 3rem 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid var(--clr-light-grayish-blue);
+    padding: 1.3rem 0;
+}
+
+.question:last-child {
+    margin-bottom: 2.1rem;
+}
+
+.question-content > p {
+    
+    
+}
+
+.question-content > p:nth-child(2) {
+    display: none;
+}
+
+[src="./images/icon-arrow-down.svg"] {
+    width: 1.1rem;
+    height: 0.8rem;
+}
