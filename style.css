@@ -50,7 +50,7 @@ body {
 }
 
 .illustration-container {
-    height: 8rem;
+    height: 7rem;
 }
 
 .illustration {
@@ -58,17 +58,20 @@ body {
 }
 
 .desk {
-    bottom: 8.1rem;
+    bottom: 9rem;
     z-index: 2;
+    width: 18rem;
 }
 
 .desk-shadow {
-    bottom: 12.8rem;
+    bottom: 15rem;
     z-index: 1;
+    width: 18rem;
 }
 
 h1 {
     margin: 1rem 0 3rem 0;
+    font-size: 2rem;
 }
 
 section {
